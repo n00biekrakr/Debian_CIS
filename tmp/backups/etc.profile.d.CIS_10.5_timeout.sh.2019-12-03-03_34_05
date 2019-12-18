@@ -1,0 +1,2 @@
+TMOUT=600
+readonly TMOUT
