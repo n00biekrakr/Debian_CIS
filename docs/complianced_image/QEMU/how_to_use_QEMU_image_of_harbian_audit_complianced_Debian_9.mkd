@@ -1,0 +1,39 @@
+# How to use QEMU image of harbian-audit complicanced Debian GNU/Linux 9 
+
+## Overview 
+Image name: debian9.9-harbian-0910.qcow2  
+Disk size: 20G 
+
+grub password protection:   
+username: harbiansuper  
+password: harbian_AUDIT,09!)  
+
+Users info:   
+user: root  
+passwd: 1qaz@WSX3edc$RFV5tgb     
+
+user: auditadmin   
+passwd: 2wsx#EDC4rfv%TGB6yhn   
+
+## Get QEMU image   
+
+### Download address  
+[debian9.9-harbian-0910.qcow2.tar.gz](https://drive.google.com/file/d/1HwaHF94AJx-95HeIVi4cUFA5aiQ_diz2/view?usp=sharing)       
+
+### Verify  
+```
+$ wget https://github.com/hardenedlinux/harbian-audit/blob/master/docs/complianced_image/QEMU/debian9.9-harbian-0910.qcow2.sig  
+$ wget https://github.com/hardenedlinux/harbian-audit/blob/master/docs/complianced_image/QEMU/signature/debian9.9-harbian-0910.qcow2.tar.gz.sig 
+$ gpg -u Samson --verify debian9.9-harbian-0910.qcow2.tar.gz.sig debian9.9-harbian-0910.qcow2.tar.gz
+$ tar -xzvf debian9.9-harbian-0910.qcow2.tar.gz   
+$ gpg -u Samson --verify debian9.9-harbian-0910.qcow2.sig debian9.9-harbian-0910.qcow2  
+```
+
+## Use the QEMU image to create virtual machine  
+
+![1](./picture/import-image_01.png)  
+![2](./picture/import-image_02.png)  
+![3](./picture/import-image_03.png)  
+![4](./picture/import-image_04.png)  
+
+
