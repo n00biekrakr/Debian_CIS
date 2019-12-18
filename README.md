@@ -31,7 +31,7 @@ hardening                 [INFO] Treating /home/test/Debian_CIS/bin/hardening/13
 ## Quickstart
 
 ```console
-$ git clone https://github.com/n00biekrakr/Debain_CIS.git && cd Debian_CIS
+$ git clone https://github.com/n00biekrakr/Debian_CIS.git && cd Debian_CIS
 $ sudo cp debian/default /etc/default/cis-hardening
 $ sudo sed -i "s#CIS_ROOT_DIR=.*#CIS_ROOT_DIR='$(pwd)'#" /etc/default/cis-hardening
 $ sudo bin/hardening.sh --init
